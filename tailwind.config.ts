@@ -1,15 +1,14 @@
+import type { Config } from "tailwindcss"
 
-import type { Config } from 'tailwindcss'
 const config: Config = {
-  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {
-      colors: {
-        fibaro: { primary: "#5b94cf", black: "#000000", white: "#ffffff" }
-      },
-      container: { center: true, padding: "1rem" }
-    }
+    extend: {},
   },
-  plugins: []
+  plugins: [],
 }
 export default config
